@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #000;
+}
+
+.container .head{
+    position:absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 100%;
+    padding: 0 50px;
+    z-index: 100000;
+}
+
+.container .head img{
+    width: 11.5%;
+    padding: 0 10px;
+}
+
+.container .head a{
+    color: #fff;
+    text-decoration: none;
+    background-color: #e50914;
+    padding: 8px 18px;
+    border-radius: 3px;
+}
+
+.banner{
+    width: 100%;
+    height: 76vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.55rem solid #222;
+}
+
+.banner:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    z-index: 1;
+    background: linear-gradient(to bottom, #000, transparent);
+    opacity: 90%;
+}
+
+.banner:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    z-index: 1;
+    background: linear-gradient(to top, #000, transparent);
+    opacity: 90%;
+}
+
+.banner .fit{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    object-fit: cover;
+}
+
+.banner .box{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100000;
+}
+
+.banner .box .heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner .box .heading h2{
+    font-size: 3.8rem;
+    font-family: Arial;
+    color:#fff;
+    letter-spacing: 2px;
+    width: 100%;
+}
+
+.banner .box .heading h5{
+    font-size: 1.625rem;
+    color:#fff;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+
+.banner .box .heading p{
+    font-size: 1.2rem;
+    color:#fff;
+    font-weight: 500;
+    padding: 15px 0;
+    padding-bottom: 20px;
+}
+
+.banner .box .search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .box .search input{
+    font-size: 16px;
+    border: 1px solid #8c8c8c;
+    outline: none;
+    color: #000;
+    border-radius: 2px;
+    padding: 10px 10px 7px 7px;
+    min-width: 400px;
+    height: 60px;
+    align-items: center;
+}
+
+.banner .box .search a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    border-radius: 2px;    
+    background: #e50914;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0, 0.45)
+    min-width: 310px;
+    padding: 10px 30px;
+    text-align: center;
+    font-size:1.625rem;
+    line-height:40px
+}
+.section1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 20rem;
+    border-bottom: 0.55rem solid #222; 
+}
+
+.section1 .txt{
+    width: 40%;
+}
+
+.section1 .txt h1{
+    font-size: 3.3rem;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.section1 .txt p{
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.section1 .img{
+    width: 45%;
+}
+
+.section1 .img img{
+    width: 100%;
+}
+
+.section2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 20rem;
+    border-bottom: 0.55rem solid #222; 
+}
+
+.section2 .txt{
+    width: 48%;
+}
+
+.section2 .txt h1{
+    font-size: 3.3rem;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.section2 .txt p{
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.section2 .img{
+    width: 45%;
+}
+
+.section2 .img img{
+    width: 100%;
+}
+.accordion {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.accordion h1{
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    padding: 3rem 0 4rem 0;
+}
+.accordion-item {
+  background-color: #303030;
+  color: #fff;
+  margin: 0.45rem 10rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 5rem;
+  line-height: 1.25rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid #000;
+  //border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+.banner2{
+    border-bottom: 0.55rem solid #222;
+}
+
+.banner2 .box{
+    margin: 4rem 0;
+}
+
+.banner2 .box .heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner2 .box .heading p{
+    font-size: 1.2rem;
+    color:#fff;
+    font-weight: 500;
+    padding: 15px 0;
+    padding-bottom: 20px;
+}
+
+.banner2 .box .search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner2 .box .search input{
+    font-size: 16px;
+    border: 1px solid #8c8c8c;
+    outline: none;
+    color: #000;
+    border-radius: 2px;
+    padding: 10px 10px 7px 7px;
+    min-width: 400px;
+    height: 60px;
+    align-items: center;
+}
+
+.banner2 .box .search a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    border-radius: 2px;    
+    background: #e50914;
+    box-shadow: 0 1px 0 rgba (0, 0, 0, 0, 0.45)
+    min-width: 310px;
+    padding: 10px 30px;
+    text-align: center;
+    font-size:1.625rem;
+    min-height:60px
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    padding: 4rem 0;
+}
+
+.footer .one{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    width: 25%;
+}
+
+.footer .two{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    width: 25%;
+}
+
+.footer li {
+    margin-left: 1.1em;
+    margin-bottom: 5px;
+    padding: 5px 0;
+}
+
+.footer li a{
+    font-size: 0.75rem;
+    color: #757575;
+    text-decoration: none;
+}
+
+.footer li a:hover{
+    border-bottom: 1px solid #757575;
+}
+
+@media screen and (max-width: 730px){
+    .container .head{
+        padding: 20px 50px;
+    }
+    .container .head img{
+        width: 20%
+    }
+    .banner .box .heading h2{
+        font-size: 3.1rem;
+        color: #fff;
+        letter-spacing: 1.5px;
+        width: 100%;
+    }
+    .banner .box .heading h5{
+        font-size: 1.4rem;
+        padding: 0.8rem 0;
+    }
+    .banner .box .heading h2{
+        font-size: 1.1rem;
+        padding: 13px 0;
+        padding-bottom: 17px;
+    }
+    .banner .box .search{
+        flex-direction: column;
+    }
+    .banner .box .search input{
+        min-width: 310px;
+        margin-bottom: 20px;
+    }
+    .section1{
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+    .section1 .txt{
+        width: 80%;
+        margin: 20px 0 50px 0;      
+    }
+    .section1 .txt h1{
+        font-size: 3.2rem;
+        letter-spacing: 1.5px;
+        padding-bottom: 5px;
+    }
+    .section1 .txt p{
+        font-size: 1.5rem;
+    }
+    .section1 .img{
+        width: 80%;
+    }
+    .section2{
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+    .section2 .txt{
+        width: 80%;
+        margin 20px 0 50 px 0;
+    }
+    .section2 .txt h1{
+        font-size: 3.2rem;
+        letter-spacing: 1.5px;
+        padding-bottom: 5px;
+    }
+    .section2 .txt p{
+        font-size: 1.5rem;
+    }
+    .section2 .img{
+        width: 80%;
+    }
+    .accordion{
+        width: 100%;
+    }
+    .accordion-item-header{
+        font-size: 1.3rem;
+    }
+    .banner2 .box{
+        margin: 4rem 0;
+    }
+    .banner2 .box .heading p{
+        font-size: 1.1rem;
+        padding: 13px 0;
+        padding-bottom: 17px;
+    }
+    .banner2 .box .search{
+        flex-direction: column;
+    }
+    .banner2 .box .search input{
+        min-width: 310px;
+        margin: 20px;
+    }
+    .footer{ 
+       flex-direction: column;
+    }
+    .footer .one{
+        width: 50%;
+    }
+    .footer .two{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 496px){
+    .container .head img{
+        width: 23%
+    }
+    .banner .box .heading h2{
+        font-size: 2.8rem;
+        color: #fff;
+        letter-spacing: 1.3px;
+    }
+    .banner .box .heading h5{
+        font-size: 1.2rem;
+    }
+    .banner .box .heading h2{
+        font-size: 1rem;
+        padding: 12px 0;
+        padding-bottom: 15px;
+    }
+    .banner .box .search input{
+        margin-bottom: 10px;
+    }
+    .section1 .txt h1{
+        font-size: 3rem;
+        letter-spacing: 1.2px;
+    }
+    .section1 .txt p{
+        font-size: 1.2rem;
+    }
+    .section2 .txt h1{
+        font-size: 3rem;
+        letter-spacing: 1.2px;
+    }
+    .section2 .txt p{
+        font-size: 1.2rem;
+    }
+    .accordion{
+        width: 100%;
+    }
+    .accordion-item-header{
+        font-size: 1rem;
+    }
+    .banner2 .box .heading p{
+        font-size: 1rem;
+        padding: 13px 0;
+    }
+    .banner2 .box .search input{
+        margin: 10px;
+    }
+}
